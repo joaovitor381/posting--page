@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Postagem</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      textarea {
+        margin-bottom: 10px;
+        padding: 8px;
+      }
+      button {
+        padding: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="postForm">
+      <input type="text" id="titulo" placeholder="Título" />
+      <textarea id="conteudo" placeholder="Conteúdo"></textarea>
+      <button type="submit">Postar</button>
+    </form>
+
+    <h2 id="renderizador-titulo"></h2>
+    <p id="renderizador-conteudo"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
